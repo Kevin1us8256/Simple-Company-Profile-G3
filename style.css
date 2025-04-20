@@ -1,3 +1,4 @@
+/* CASEROUL PIC */
 .product-card {
     text-align: center;
     padding: 20px;
@@ -48,90 +49,125 @@
     font-size: 2.5em;
     margin-bottom: 20px;
   }
-  
-  
-  .cards {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    border-radius: 10px;
-  }
-  
 
-  .card img {
-    width: 100px;
-    margin-bottom: 20px;
-  }
-  
-  .card h3 {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin: 10px 0;
-  }
-  
-  .card p {
-    font-size: 1em;
-    color: #333;
-  }
-  
-  /* Custom colors */
+  /* 3 Box */
+.category-container1 {
+  display: flex; 
+  width: 100%; 
+  height: 500px; 
+
+}
+
+.category-link-wrapper1 {
+  flex: 1; 
+  display: block; 
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+
+  height: 100%;
+}
+
+
+.category-box1 {
+  width: 100%; 
+  height: 100%; 
+  background-size: cover; 
+  background-position: center; 
+  position: relative;
+  transition: filter 0.3s ease;
+  filter: brightness(70%); 
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  cursor: pointer; 
+  overflow: hidden;
+}
+
+
+.category-box1:hover {
+  filter: brightness(100%);
+}
+
+.category-box1 .content1 {
+  text-align: center; 
+  color: white; 
+  position: relative;
+  z-index: 2; 
+}
+
+.category-box1 h2 {
+  font-size: 28px; 
+  font-weight: bold; 
+  margin: 0; 
+}
+/* Kartu  */
+
   .card-green {
-    background-color: #a7e2a1;
-  }
-  
-  .card-purple {
-    background-color: #e3b7f3;
-  }
-  
-  .card-orange {
-    background-color: #ffc774;
-  }
+    background-color: #d4edda;
+    color: #155724;
+}
+.card-purple {
+    background-color: #e2d4f0; 
+    color: #491263;
+}
+.card-orange {
+    background-color: #ffe5d9; 
+    color: #85200c;
+}
 
-
-  .category-container {
-    display: flex;
-    width: 100%;
-    height: 500px;
-  }
-  
-  .category-box {
-    flex: 1;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    transition: filter 0.3s ease;
-    filter: brightness(70%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .category-box:hover {
-    filter: brightness(100%);
-  }
-  
-  .category-box .content {
-    text-align: center;
-    color: white;
-  }
-  
-  .category-box h2 {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .category-box a {
-    color: white;
-    font-size: 14px;
-    text-decoration: none;
-    border-bottom: 1px solid white;
-    transition: all 0.3s ease;
-  }
-  
-  .category-box a:hover {
-    color: #ffc107;
-    border-color: #ffc107;
-  }
-  
+/* FOOTER */
+.bca-footer {
+  background-color: #071c2f;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+.footer-columns > div {
+  flex: 1;
+  min-width: 200px;
+}
+.footer-columns h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #fff;
+}
+.footer-columns a {
+  color: #00aaff;
+  text-decoration: underline;
+}
+.footer-columns input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  color: #fff;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 12px;
+  margin-top: 20px;
+  gap: 10px;
+}
+.footer-links {
+  text-align: right;
+  flex: 1;
+  min-width: 150px;
+}
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin-top: 30px;
+}
