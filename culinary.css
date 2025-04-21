@@ -1,0 +1,36 @@
+.produk-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .produk-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s;
+  }
+
+  .produk-item:hover {
+    transform: translateY(-5px);
+  }
+
+  .produk-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .produk-item h3 {
+    margin: 10px 0 5px;
+  }
+
+  .produk-item p {
+    margin: 0;
+    color: #555;
+  }
