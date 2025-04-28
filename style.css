@@ -167,8 +167,8 @@ hr {
 
 /* Hero Section */
 .hero-career {
-  background: url('assets/img/karir.jpg') no-repeat center center/cover;
-  height: 80vh;
+  background: url(img/karir.jpg) center/cover;
+  height: 100vh;
   position: relative;
 }
 
