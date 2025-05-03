@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Form Lamaran - BerpFish</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<nav class="navbar navbar-expand-lg bg-primary py-3">
+    <div class="container">
+      <img src="img/Berpfish3.png" alt="logo" width="100">
+      <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto d-flex gap-3 text-center pt-lg-0 pt-4">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="produk.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-red" aria-current="page" href="career.html">Career</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="discovery.html">Discover</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="culinary.html">Culinary</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Header end -->
+
+<!-- Form Lamaran -->
+<div class="container my-5">
+  <h2 class="mb-4 text-center">Formulir Lamaran</h2>
+  <form>
+    <div class="mb-3">
+      <label for="nama" class="form-label">Nama Lengkap</label>
+      <input type="text" class="form-control" id="nama" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">Email Aktif</label>
+      <input type="email" class="form-control" id="email" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="telepon" class="form-label">No. Telepon</label>
+      <input type="tel" class="form-control" id="telepon" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="kategori" class="form-label">Kategori Karir</label>
+      <input type="text" class="form-control" id="kategori" readonly>
+    </div>
+
+    <div class="mb-3">
+      <label for="cv" class="form-label">Unggah CV</label>
+      <input class="form-control" type="file" id="cv" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Kirim Lamaran</button>
+  </form>
+</div>
+
+<!-- fOOTER -->
+<footer class="bca-footer">
+    <div class="footer-columns">
+      <div>
+        <h4>Berpfish Headquarters</h4>
+        <p>Menara Berepfish, Grand Indonesia<br>Jl. Mr Rius No. 1<br>Cianjir 10310</p>
+      </div>
+      <div>
+        <h4>Contact Us</h4>
+        <p>📞 Halo BT 069xxxx</p>
+        <p>📧 haloberp@berp.co.id</p>
+        <p>📱 +62 859 xxxx x998</p>
+      </div>
+   
+      <div>
+        <h4>Get promos and best deals from BerpFish</h4>
+        <input type="email" placeholder="Email" />
+        <p style="font-size: 0.8em;">
+          This site is protected by reCAPTCHA and the Google<br />
+          <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a> apply.
+        </p>
+      </div>
+    </div>
+    <hr>
+    <div class="footer-bottom">
+      <p>
+        Berpfish is licensed and supervised by SEAFDEC (South East Asia Fisheries Development Center). <br />
+        Berpfish is a member of Federasi Asosiasi Perikanan Indonesia (FAPI) .
+      </p>
+      <p class="footer-links">fish | Policy | Terms</p>
+    </div>
+  </footer>
+
+<!-- Script untuk ambil kategori dari URL -->
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const kategori = params.get("kategori") || "Fresh Graduate";
+  document.getElementById("kategori").value = kategori;
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

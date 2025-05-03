@@ -187,20 +187,66 @@ hr {
   z-index: 2;
 }
 
-/* Card hover effect */
-.card:hover {
-  transform: translateY(-5px);
-  transition: 0.3s;
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Button Styling */
-.btn-primary {
-  background-color: #0056b3;
-  border: none;
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
 }
 
-.btn-primary:hover {
-  background-color: #004494;
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #005bac;
+}
+
+/* Hero Section */
+.hero {
+  background: url('images/hero.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #005bac;
+  border-radius: 5px;
+}
+
+/* Tentang berpfish */
+.tentang-berpfish {
+  background-color: #6a86fe;
+}
+
+
+/* Magang Bakti */
+.magang-bakti {
+  background-color: #f0f8ff; /* contoh warna biru muda */
 }
 
 /* Footer */
