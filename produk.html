@@ -1,93 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BerpFish</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BerpFish</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+    .hero {
+      background-color: #1e88e5;
+      color: white;
+      padding: 80px 20px;
+    }
+    .katalog {
+      padding: 60px 20px;
+    }
+    .btn-katalog {
+      background-color: white;
+      color: black;
+      font-weight: bold;
+    }
+    .btn-katalog:hover {
+      background-color: #f0f0f0;
+    }
+  </style>
 </head>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <body>
-  <!-- Header -->
-    <nav class="navbar navbar-expand-lg bg-primary py-3">
-        <div class="container">
-          <img src="img/Berpfish3.png " alt="logo" width="100">
-          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          x</button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto d-flex gap-3 text-center pt-lg-0 pt-4">
-              <li class="nav-item">
-                <a class="nav-link text-white" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active text-red" aria-current="page" href="produk.html">Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="career.html">Career</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="discovery.html">Discover</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="culinary.html">Culinary</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <!-- Header end -->
-      
 
-<!-- Hero Section -->
-<section class="bg-primary text-white py-5 position-relative overflow-hidden">
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg bg-primary py-3">
+      <div class="container">
+        <img src="img/Berpfish3.png " alt="logo" width="100">
+        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto d-flex gap-3 text-center pt-lg-0 pt-4">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-red" aria-current="page" href="produk.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="career.html">Career</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="discovery.html">Discover</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="culinary.html">Culinary</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Header end -->
+
+<!-- Bagian Hero -->
+<section class="hero d-flex align-items-center justify-content-between">
   <div class="container">
     <div class="row align-items-center">
-      <!-- Teks -->
-      <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
-        <h1 class="fw-bold mb-3">Temukan Pilihan Ikan Segar & Berkualitas</h1>
-        <p class="fs-5">Bersama BerpFish, pilih ikan terbaik dari laut, tawar, dan payau. Rasakan kesegaran langsung dari sumbernya.</p>
-        <a href="#produk" class="btn btn-light mt-3 fw-semibold px-4 py-2">Lihat Katalog</a>
+      <div class="col-md-6">
+        <h1>Temukan Pilihan Ikan Segar & Berkualitas</h1>
+        <p>Bersama BerpFish, pilih ikan terbaik dari laut, tawar, dan payau. Rasakan kesegaran langsung dari sumbernya.</p>
+        <a href="#produk" class="btn btn-katalog mt-3">Lihat Katalog</a>
       </div>
-
-   <!-- Gambar -->
-   <div class="col-md-6 text-center">
-    <img src="img/ikan lucu.jpg" alt="ikan lucu" class="img-fluid" style="max-height: 400px; border-radius: 30px;">
+      <div class="col-md-6 text-center">
+        <img src="img/ikan lucu.jpg" alt="Ikan Segar" class="img-fluid rounded">
+      </div>
+    </div>
   </div>
-</div>
-</div>
-
-  <!-- Bentuk Dekoratif -->
-  <div class="position-absolute top-0 end-0 w-100 h-100" style="background: radial-gradient(circle at 80% 20%, rgba(255,255,255,0.1), transparent 70%); z-index:0;"></div>
 </section>
 
-<!-- Produk Section -->
-<section id="produk" class="py-5 bg-light">
+<!-- Bagian Katalog Produk -->
+<section id="produk" class="katalog bg-light">
   <div class="container">
-    <section id="katalog">
-    <h2 class="text-center fw-bold mb-4">Katalog Produk BerpFish</h2>
-
-    <!-- Kategori Filter -->
-    <div class="text-center mb-4">
-      <button class="btn btn-outline-primary filter-btn active" data-filter="all">Semua</button>
-      <button class="btn btn-outline-primary filter-btn" data-filter="laut">Ikan Laut</button>
-      <button class="btn btn-outline-primary filter-btn" data-filter="tawar">Ikan Tawar</button>
-      <button class="btn btn-outline-primary filter-btn" data-filter="payau">Ikan Payau</button>
+    <h2 class="text-center mb-4">Katalog Produk BerpFish</h2>
+    <div class="d-flex justify-content-center mb-3">
+      <button class="btn btn-primary mx-1" data-category="all" data-target="produk">Semua</button>
+      <button class="btn btn-outline-primary mx-1" data-category="laut" data-target="ikan-laut">Ikan Laut</button>
+      <button class="btn btn-outline-primary mx-1" data-category="tawar" data-target="ikan-tawar">Ikan Tawar</button>
+      <button class="btn btn-outline-primary mx-1" data-category="payau" data-target="ikan-payau">Ikan Payau</button>
     </div>
 
-    <!-- Produk -->
+    <!-- Contoh Kartu Produk -->
     <div class="row row-cols-1 row-cols-md-3 g-4" id="produk-list">
       <!-- Tuna - Laut -->
-      <div class="col product-item" data-category="laut">
+      <div class="col product-item" data-category="laut" id="ikan-laut">
         <div class="card h-100 shadow-sm">
           <img src="img/tuna.jpeg" class="card-img-top" alt="Tuna">
           <div class="card-body">
@@ -99,7 +101,7 @@
       </div>
 
       <!-- Nila - Tawar -->
-      <div class="col product-item" data-category="tawar">
+      <div class="col product-item" data-category="tawar" id="ikan-tawar">
         <div class="card h-100 shadow-sm">
           <img src="img/nila.jpg" class="card-img-top" alt="Nila">
           <div class="card-body">
@@ -111,7 +113,7 @@
       </div>
 
       <!-- Kembung - Laut -->
-      <div class="col product-item" data-category="laut">
+      <div class="col product-item" data-category="laut" id="ikan-laut">
         <div class="card h-100 shadow-sm">
           <img src="img/kembung.jpeg" class="card-img-top" alt="Kembung">
           <div class="card-body">
@@ -123,7 +125,7 @@
       </div>
 
        <!-- Kuwe - Laut -->
-       <div class="col product-item" data-category="laut">
+       <div class="col product-item" data-category="laut" id="ikan-laut">
         <div class="card h-100 shadow-sm">
           <img src="img/kuwe.png" class="card-img-top" alt="Kuwe">
           <div class="card-body">
@@ -135,7 +137,7 @@
       </div>
 
       <!-- Bandeng - Payau -->
-      <div class="col product-item" data-category="payau">
+      <div class="col product-item" data-category="payau" id="ikan-payau">
         <div class="card h-100 shadow-sm">
           <img src="img/bandeng.png" class="card-img-top" alt="Bandeng">
           <div class="card-body">
@@ -147,7 +149,7 @@
       </div>
 
       <!-- Lele - Tawar -->
-      <div class="col product-item" data-category="tawar">
+      <div class="col product-item" data-category="tawar" id="ikan-tawar">
         <div class="card h-100 shadow-sm">
           <img src="img/lele.jpg" class="card-img-top" alt="Lele">
           <div class="card-body">
@@ -159,7 +161,7 @@
       </div>
 
       <!-- Kakap - Tawar -->
-      <div class="col product-item" data-category="tawar">
+      <div class="col product-item" data-category="tawar" id="ikan-tawar">
         <div class="card h-100 shadow-sm">
           <img src="img/kakap.webp" class="card-img-top" alt="Kakap">
           <div class="card-body">
@@ -171,7 +173,7 @@
       </div>
 
         <!-- Mujaer - Tawar -->
-        <div class="col product-item" data-category="tawar">
+        <div class="col product-item" data-category="tawar" id="ikan-tawar">
           <div class="card h-100 shadow-sm">
             <img src="img/mujaer.jpeg" class="card-img-top" alt="Mujaer">
             <div class="card-body">
@@ -180,43 +182,83 @@
               <p class="fw-bold">Rp30.000 / Kg</p>
             </div>
           </div>
-        </div>
-
+        </div
     </div>
   </div>
-  </section>
-</section>
 
-<!-- Filter Script -->
-<script>
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  const products = document.querySelectorAll('.product-item');
+<!-- fOOTER -->
+<footer class="bca-footer">
+  <div class="footer-columns">
+    <div>
+      <h4>Berpfish Headquarters</h4>
+      <p>Menara Berepfish, Grand Indonesia<br>Jl. Mr Rius No. 1<br>Cianjir 10310</p>
+    </div>
+    <div>
+      <h4>Contact Us</h4>
+      <p>📞 Halo BT 069xxxx</p>
+      <p>📧 haloberp@berp.co.id</p>
+      <p>📱 +62 859 xxxx x998</p>
+    </div>
+ 
+    <div>
+      <h4>Get promos and best deals from BerpFish</h4>
+      <input type="email" placeholder="Email" />
+      <p style="font-size: 0.8em;">
+        This site is protected by reCAPTCHA and the Google<br />
+        <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a> apply.
+      </p>
+    </div>
+  </div>
+  <hr>
+  <div class="footer-bottom">
+    <p>
+      Berpfish is licensed and supervised by SEAFDEC (South East Asia Fisheries Development Center). <br />
+      Berpfish is a member of Federasi Asosiasi Perikanan Indonesia (FAPI) .
+    </p>
+    <p class="footer-links">fish | Policy | Terms</p>
+  </div>
+</footer>
 
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      // remove 'active' class
-      filterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-      const filter = btn.getAttribute('data-filter');
 
-      products.forEach(product => {
-        const category = product.getAttribute('data-category');
-        if (filter === 'all' || filter === category) {
-          product.style.display = 'block';
+ <script>
+  document.querySelectorAll('button[data-category]').forEach(button => {
+    button.addEventListener('click', function () {
+      const category = this.getAttribute('data-category');
+      const targetId = this.getAttribute('data-target');
+
+      // Scroll ke target
+      const targetEl = document.getElementById(targetId);
+      if (targetEl) {
+        targetEl.scrollIntoView({ behavior: 'smooth' });
+      }
+
+      // Filter produk
+      document.querySelectorAll('.product-item').forEach(item => {
+        const itemCategory = item.getAttribute('data-category');
+        if (category === 'all' || itemCategory === category) {
+          item.style.display = 'block';
         } else {
-          product.style.display = 'none';
+          item.style.display = 'none';
         }
       });
+
+      // Update gaya tombol aktif
+      document.querySelectorAll('button[data-category]').forEach(btn => {
+        btn.classList.remove('btn-primary');
+        btn.classList.add('btn-outline-primary');
+      });
+      this.classList.remove('btn-outline-primary');
+      this.classList.add('btn-primary');
     });
   });
 </script>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+</section>
 </body>
 </html>
+
 
 
 
