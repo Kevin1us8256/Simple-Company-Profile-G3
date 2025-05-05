@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+.container-content {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.image-container {
+    position: relative;
+    text-align: center;
+}
+.image-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+.image-container h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0,0,0,0.6);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.section {
+    margin-top: 20px;
+}
+.section h2 {
+    margin-bottom: 10px;
+}
+ul, ol {
+    padding-left: 20px;
+}
