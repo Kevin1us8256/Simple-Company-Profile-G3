@@ -1,0 +1,36 @@
+.section{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+h1 {
+    color: #d35400;
+    margin-bottom: 10px;
+}
+h2, h3 {
+    color: #2980b9;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+ul, ol {
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+li {
+    margin-bottom: 5px;
+        }
