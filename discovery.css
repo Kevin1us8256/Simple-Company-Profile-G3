@@ -1,0 +1,114 @@
+/* Style untuk Timeline */
+.timeline-container {
+    position: relative;
+    padding: 30px 0; 
+    margin-left: 25px;
+    margin-right: 25px; 
+    overflow: hidden;
+}
+
+/* Garis Horizontal Timeline */
+.timeline-line {
+    position: absolute;
+
+    top: 40%;
+    left: 0;
+    right: 0;
+    height: 4px; 
+    background-color: #ccc; 
+    transform: translateY(-50%); /* Menyesuaikan agar pas di tengah secara vertikal */
+    z-index: 1; /* Pastikan garis di belakang dot */
+}
+
+/* Pembungkus untuk semua milestone dots */
+.timeline-wrapper {
+    position: relative; 
+    z-index: 2; /* Pastikan dot di atas garis */
+}
+
+/* Kontainer untuk satu milestone (dot + label tahun) */
+.timeline-milestone {
+    /* Dikelola oleh flexbox di .timeline-wrapper */
+    text-align: center; /* Pusatkan label tahun di bawah dot */
+    position: relative; /* Untuk positioning dot relatif */
+    flex: 1; /* Agar jarak antar milestone merata */
+}
+
+/* Titik (Dot) Milestone */
+.timeline-dot {
+    display: inline-block; /* Agar bisa diberi width/height */
+    width: 18px;
+    height: 18px;
+    background-color: #ccc; /* Warna dot default */
+    border: 3px solid #fff; /* Border putih agar terlihat di atas garis */
+    border-radius: 50%; /* Membuatnya bulat */
+    cursor: pointer;
+    position: relative; /* Untuk z-index jika perlu */
+    z-index: 3; /* Dot di atas garis */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transisi halus */
+    /* Posisi vertikal dot agar tepat di garis */
+    margin-top: -9px; /* Setengah dari height dot agar pas di tengah */
+}
+
+/* Style Dot Aktif */
+.timeline-dot.active {
+    background-color: #0d6efd; /* Warna biru Bootstrap Primary */
+    transform: scale(1.3); /* Sedikit lebih besar saat aktif */
+}
+
+/* Label Tahun di bawah dot */
+.milestone-year-label {
+    display: block; /* Pastikan di baris baru */
+    margin-top: 15px; /* Jarak dari dot */
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Style untuk Konten (Fade effect) */
+#milestone-content {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#milestone-content.fade-out {
+    opacity: 0;
+}
+
+/* === ADDED/MODIFIED FOR CONSISTENT IMAGE SIZE === */
+#milestone-image {
+    /* width: 100%;  Let img-fluid handle max-width */
+    height: 250px; /* Set a fixed height */
+    object-fit: cover; /* Crop image to fit the container while maintaining aspect ratio */
+    /* img-fluid (from Bootstrap) already adds max-width: 100%; height: auto;,
+       our fixed height overrides the height: auto; */
+}
+
+/* Optional: Adjust image size on smaller screens if needed */
+@media (max-width: 768px) {
+    #milestone-image {
+        height: 180px; /* Smaller height on small screens */
+    }
+    /* Ensure text alignment is handled by the parent container's col-md-* classes */
+     #milestone-content .col-md-4,
+     #milestone-content .col-md-8 {
+         text-align: center; /* Pusatkan semua konten di layar kecil */
+     }
+}
+/* =============================================== */
+
+
+/* Responsif (Contoh sederhana) */
+@media (max-width: 768px) {
+    .timeline-container {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .milestone-year-label {
+        font-size: 0.8em; /* Kecilkan font tahun di layar kecil */
+    }
+    /* Removed redundant text-align centering as it's added above */
+    /* #milestone-content .col-md-4,
+    #milestone-content .col-md-8 {
+        text-align: center;
+    } */
+}
