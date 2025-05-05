@@ -122,7 +122,7 @@
   justify-content: space-between;
   gap: 20px;
 }
-.footer-columns > div {
+.footer-columns div {
   flex: 1;
   min-width: 200px;
 }
@@ -243,4 +243,8 @@ a {
 /* Footer */
 footer {
   font-size: 14px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
