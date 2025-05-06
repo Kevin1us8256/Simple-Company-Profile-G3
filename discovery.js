@@ -6,37 +6,37 @@ document.addEventListener('DOMContentLoaded', () => { // Pastikan DOM siap
         {
             year: 1994,
             image: "img/kantorlama.png",
-            description: "Pada tahun 1994, Perusahaan Berpfish didirikan di Banten Cilegon. Kevin Ferguson sebagai Founder dan Yelina Lim serta Keni Gorden sebagai Co-Founder"
+            description: "Pada tahun 1994, Perusahaan Berpfish didirikan di Banten Cilegon. Kevin Ferguson sebagai Founder dan Yelina Lim serta Keni Gorden sebagai Co-Founder. Berpfish meraih kontrak kerja sama pertamanya dengan distributor makanan lokal di Jakarta. Ini menjadi tonggak awal perluasan jaringan distribusi perusahaan di Pulau Jawa."
         },
         {
             year: 1998,
             image: "img/pabrikikan.png", 
-            description: "Perluasan pertama dilakukan pada tahun 1998. Kami meresmikan pabrik pertama di Skibidicity Tuff, Namun krisis moneter 1998 sangat memukuli perusahaan kami"
+            description: "Berpfish melakukan langkah besar dengan meresmikan pabrik pertamanya di Skibidicity Tuff sebagai bagian dari strategi ekspansi produksi. Namun, tahun ini juga menjadi salah satu masa tersulit dalam sejarah perusahaan. Krisis moneter 1998 yang melanda Indonesia secara signifikan memukul stabilitas finansial perusahaan. Nilai tukar yang anjlok dan biaya produksi yang melonjak menyebabkan gangguan pada rantai pasok, operasional pabrik dan menghambat jalan ekspor kami. Meski demikian, manajemen tetap berkomitmen untuk mempertahankan seluruh tenaga kerja dan fokus pada efisiensi agar perusahaan dapat bertahan di tengah badai ekonomi."
         },
         {
             year: 2001,
             image: "img/interikan.png", 
-            description: "Awal langkah Kancah Internasional di tahun 2001. Kami memulai ekspor dan mencapai angka singnifikan di Malaysia, Thailand, dan ekspor di berbagai negara regional lainnya"
+            description: "Berpfish mengambil langkah awal menuju pasar internasional dengan memulai kegiatan ekspor produk hasil laut ke negara-negara tetangga di kawasan Asia Tenggara. Malaysia dan Thailand menjadi dua pasar utama pertama yang menunjukkan respons positif, dengan volume ekspor yang tumbuh signifikan dalam waktu singkat. Keberhasilan ini membuka jalan bagi ekspor ke negara-negara regional lainnya seperti Singapura, Vietnam, dan Filipina. Momentum ini menjadi fondasi penting dalam membangun reputasi Berpfish sebagai produsen terpercaya di pasar Asia, sekaligus menandai dimulainya perjalanan global perusahaan"
         },
         {
             year: 2008,
             image: "img/kapal.png", 
-            description: "Kami membuka pabrik baru di Malaysia dan Thailand secara bersamaan dan membuka beberapa pabrik di berbagai pulau, Perusahaan kami mulai ekspansi."
+            description: "Berpfish menerima sertifikasi ISO 22000 untuk keamanan pangan, memperkuat reputasinya sebagai produsen makanan laut berkualitas tinggi. Kami meresmikan pabrik baru di Malaysia dan Thailand secara bersamaan, Kami membangun Whaling Station pertama kami, dan berhasil membangun beberapa pabrik di berbagai pulau, Perusahaan kami mulai ekspansi."
         },
         {
             year: 2015,
-            image: "img/Xiandme.png", 
-            description: "Ekspansi pasar global dimulai tahun 2015. Kami juga mulai menjalin kerja sama dengan lembaga serta berbagai perusahaan dan membangun pabrik di Asia timur seperti China dan Jepang."
+            image: "img/berpteam.png",
+            description: "Sebagai bagian dari komitmen jangka panjang terhadap keberlanjutan dan pemberdayaan lokal, Berpfish meluncurkan sistem Berpteam—sebuah platform inovatif yang menghubungkan langsung nelayan independen dengan perusahaan sebagai distributor penengah. Sistem ini dirancang untuk memotong rantai distribusi yang panjang dan tidak efisien, sehingga nelayan dapat memperoleh harga jual yang lebih adil dan stabil. Berpteam tidak hanya meningkatkan kesejahteraan nelayan, tetapi juga menjamin transparansi dan kualitas produk sejak dari sumbernya. Inisiatif ini mendapat dukungan penuh dari Pemerintah Pusat sebagai bagian dari program nasional ketahanan pangan laut dan ekonomi berbasis komunitas pesisir"
         },
         {
             year: 2019,
-            image: "img/berpteam.png",
-            description: "Kami mendirikan sistem bernama Berpteam, sistem yang membuat nelayan independen dapat mendapatkan hidup yang lebih baik dengan transaksi langsung dengan kami, Dengan bantuan dari Pemerintah Pusat"
+            image: "img/Xiandme.png",
+            description: "Berpfish resmi memulai ekspansi pasar global secara agresif dengan memperluas jaringan distribusi ke Asia Timur, Eropa, dan Amerika Utara. Tahun ini menandai awal dari transformasi perusahaan menjadi pemain internasional di industri hasil laut. Kami mulai menjalin kerja sama dengan berbagai lembaga serta perusahaan multinasional untuk memperkuat posisi di pasar global. Sebagai bagian dari strategi ekspansi, Berpfish membangun fasilitas produksi dan pusat distribusi di China dan Jepang untuk mendekatkan rantai pasok dengan konsumen Asia Timur, sekaligus meningkatkan efisiensi logistik dan kecepatan pengiriman."
         },
         {
             year: 2025,
-            image: "https://via.placeholder.com/300x200/cccccc/000000?text=2025", 
-            description: "Rencana masa depan untuk tahun 2025 dan seterusnya. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam."
+            image: "img/research.png", 
+            description: "Memasuki era baru, Berpfish menegaskan posisinya sebagai pemimpin industri pangan laut berkelanjutan di Asia. Di tahun ini, perusahaan meluncurkan Berpfish BlueTech Initiative, sebuah program inovasi berbasis teknologi ramah lingkungan yang fokus pada efisiensi energi, pengurangan limbah laut, dan digitalisasi proses distribusi. Kami juga membuka pusat riset dan pengembangan baru di Bandung yang berkolaborasi dengan universitas-universitas terkemuka untuk mendorong inovasi pangan berbasis kelautan. Dengan ekspansi ke pasar Timur Tengah dan kemitraan distribusi di Afrika Timur, Berpfish semakin memperkuat jaringan globalnya sambil tetap menjaga akar lokal dan komitmen terhadap komunitas nelayan Indonesia."
         }
     ];
 
