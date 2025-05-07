@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Form Lamaran - BerpFish</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<nav class="navbar navbar-expand-lg bg-primary py-3">
+    <div class="container">
+      <img src="img/Berpfish3.png" alt="logo" width="100">
+      <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto d-flex gap-3 text-center pt-lg-0 pt-4">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="produk.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-red" aria-current="page" href="career.html">Career</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="discovery.html">Discover</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="culinary.html">Culinary</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Header end -->
+
+  <div class="mb-5 p-4 rounded-4" style="background-color: #c1ddf7;">
+    <p class="text-muted text-center fs-5">
+      Ingin belajar langsung dari laut dan berkontribusi nyata untuk keberlanjutan? <br>
+      Program <strong>Bakti Laut Biru</strong> membuka kesempatan magang bagi generasi muda yang peduli pada laut Indonesia.
+    </p>
+  
+    <div class="mt-4">
+      <h5 class="text-primary fw-semibold">Apa Itu Bakti Laut Biru?</h5>
+      <p class="text-muted">
+        Sebuah program magang edukatif yang dirancang untuk mengenalkan generasi muda pada dunia perikanan modern, konservasi laut, dan distribusi hasil laut yang berkelanjutan.
+      </p>
+  
+      <ul class="text-muted">
+        <li>🌊 Belajar langsung dari nelayan, kru kapal, dan tim operasional</li>
+        <li>🌊 Pelatihan pengelolaan hasil laut & logistik distribusi</li>
+        <li>🌊 Akses mentoring dari profesional industri kelautan</li>
+        <li>🌊 Sertifikat resmi dan peluang direkrut setelah magang</li>
+      </ul>
+  
+      <p class="text-muted mt-3">
+        Bersama <strong>BerpFish</strong>, laut bukan hanya ruang belajar, tapi juga tempat tumbuh dan berkontribusi. <br>
+        <span class="fw-semibold text-primary">Yuk, jadikan langkah kecilmu berarti untuk laut yang lebih biru!</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- Magang Bakti -->
+  <section id="magang" class="py-5 bg-light">
+    <div class="container">
+      <div class="mx-auto" style="max-width: 600px;">
+        <div class="bg-white p-4 rounded shadow-sm">
+          <h3 class="mb-4 text-center text-primary">Formulir - Program Magang Bakti Laut</h3>
+          <form>
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama Lengkap</label>
+              <input type="text" class="form-control" id="nama" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Aktif</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="telepon" class="form-label">No. Telepon</label>
+              <input type="txt" class="form-control" id="telepon" required>
+            </div>
+            <div class="mb-3">
+              <label for="cv" class="form-label">Unggah CV</label>
+              <input type="file" class="form-control" id="cv">
+            </div>
+            <div class="mb-3">
+              <label for="pesan" class="form-label">Pesan Tambahan</label>
+              <textarea class="form-control" id="pesan" rows="3"></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary">Kirim Lamaran</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- Script untuk ambil kategori dari URL -->
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const kategori = params.get("kategori") || "Fisheries";
+    document.getElementById("kategori").value = kategori;
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
