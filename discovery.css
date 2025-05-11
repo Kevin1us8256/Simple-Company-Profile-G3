@@ -258,3 +258,50 @@ html, body {
 .greeen {
     color: green;
 }
+
+/* Partner */
+.container17 {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.partner-item {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    background-color: #fff;
+}
+
+.partner-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.text-with-right-bg {
+    position: relative; /* Untuk memposisikan background di dalamnya */
+    padding-right: 100px; /* Beri ruang untuk background kanan */
+}
+
+.text-with-right-bg h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.text-with-right-bg p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+
+/* Gaya tambahan untuk judul utama */
+h2.text-center {
+    color: #333;
+}
+
+h2 span.text-primary {
+    color: #0d6efd;
+}

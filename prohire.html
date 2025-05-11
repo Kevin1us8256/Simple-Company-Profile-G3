@@ -85,6 +85,30 @@
               <label for="telepon" class="form-label">No. Telepon</label>
               <input type="txt" class="form-control" id="telepon" required>
             </div>
+            <div>
+              <label for="dropdown" class="dropdown">Jenis pekerjaan</label>
+              <div class="dropdown mb-3">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Pilih jenis pekerjaan
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><button class="dropdown-item" type="button">Finance</button></li>
+                  <li><button class="dropdown-item" type="button">Marketing</button></li>
+                  <li><button class="dropdown-item" type="button">IT Department</button></li>
+                </ul>
+              </div>
+              
+              <script>
+                const dropdownItems = document.querySelectorAll('.dropdown-item');
+                const dropdownButton = document.getElementById('dropdownMenuButton1');
+              
+                dropdownItems.forEach(item => {
+                  item.addEventListener('click', () => {
+                    dropdownButton.innerText = item.innerText;
+                  });
+                });
+              </script>
+            </div>
             <div class="mb-3">
               <label for="cv" class="form-label">Unggah CV</label>
               <input type="file" class="form-control" id="cv">

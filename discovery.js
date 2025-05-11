@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => { // Pastikan DOM siap
         {
             year: 2015,
             image: "img/berpteam.png",
-            description: "Sebagai bagian dari komitmen jangka panjang terhadap keberlanjutan dan pemberdayaan lokal, Berpfish meluncurkan sistem Berpteam—sebuah platform inovatif yang menghubungkan langsung nelayan independen dengan perusahaan sebagai distributor penengah. Sistem ini dirancang untuk memotong rantai distribusi yang panjang dan tidak efisien, sehingga nelayan dapat memperoleh harga jual yang lebih adil dan stabil. Berpteam tidak hanya meningkatkan kesejahteraan nelayan, tetapi juga menjamin transparansi dan kualitas produk sejak dari sumbernya. Inisiatif ini mendapat dukungan penuh dari Pemerintah Pusat sebagai bagian dari program nasional ketahanan pangan laut dan ekonomi berbasis komunitas pesisir"
+            description: "Sebagai wujud komitmen jangka panjang terhadap keberlanjutan dan pemberdayaan komunitas lokal, Berpfish memperkenalkan Berpteam—sebuah platform digital yang menghubungkan nelayan independen langsung dengan perusahaan sebagai distributor penengah. Sistem ini memangkas rantai distribusi yang panjang dan tidak efisien, memastikan harga jual yang lebih adil serta transparansi produk sejak dari sumbernya. Inisiatif ini mendapat dukungan penuh dari Pemerintah Pusat sebagai bagian dari program strategis ketahanan pangan laut dan penguatan ekonomi pesisir. Untuk memperluas dampak sistem ini, Berpfish mengintegrasikan Berpteam dengan jaringan distribusi digital Toko Ipsum, mitra e-commerce internasional sejak 2015. Kolaborasi ini memungkinkan hasil laut dari komunitas lokal menjangkau pasar global secara langsung, dengan jaminan kualitas dan pengiriman cepat. Sinergi ini memperkuat posisi Berpfish sebagai pelopor ekosistem pangan laut digital yang adil, inklusif, dan berkelanjutan."
         },
         {
             year: 2019,
@@ -157,3 +157,5 @@ document.addEventListener('DOMContentLoaded', () => { // Pastikan DOM siap
     createTimeline();
 
 }); // Akhir dari DOMContentLoaded
+
+// Partner
